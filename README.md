@@ -40,6 +40,6 @@
 | Client에서 소유하며 제어 가능 | 원격의 공간에서 관리 및 유지 |
 | Client 내에서 항상 최신 상태로 관리 | 다른 사람들과 공유되는 상태로 관리 |
 
-Redux와 같은 상태관리로 Client 와 Server 상태를 동시에 관리하면 어플리케이션의 복잡도가 증가하고 성능상의 이슈가 있기 때문에
-</br>Client 상태 관리를 Recoil로 Server 상태 관리를 React-query로 진행하고 위에 나와 있는 상태 관리 전략 표를 기준으로 Client와 Server 상태를 나눕니다.
+Redux와 같은 상태관리로 Client 와 Server 상태를 동시에 관리하면 어플리케이션의 복잡도가 증가하고 성능상의 이슈가 있어 </br>
+Client 와 Server 상태 관리를 각각 __Recoil__ 과 __React-query__ 로 사용하였고 위에 나와 있는 __상태 관리 전략__ 을 기준으로 Client와 Server 상태를 나눕니다.
 
