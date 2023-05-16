@@ -3,18 +3,18 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-  entry: './index.tsx',
+  entry: './src/index.tsx',
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    extensions: ['.tsx', '.ts', '.js'],
   },
   module: {
     rules: [
       {
-        test: /\\.tsx?$/,
+        test: /\.(ts|tsx)$/,
         use: ['babel-loader', 'ts-loader'],
       },
       {
-        test: /\\.(png|jpe?g|gif)$/,
+        test: /\.(png|jpe?g|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -24,7 +24,7 @@ module.exports = {
     ],
   },
   output: {
-    path: path.join(__dirname, '/dist'), // 절대 경로
+    path: path.resolve(__dirname, '/dist'), // 절대 경로
     filename: 'bundle.js',
   },
   plugins: [
