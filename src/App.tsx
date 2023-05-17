@@ -1,7 +1,11 @@
-import React from 'react'
+import styled from 'styled-components'
 
 const App = () => {
-  return <div>app</div>
+  return <Container>app</Container>
 }
 
 export default App
+
+const Container = styled.div`
+  color: red;
+`
