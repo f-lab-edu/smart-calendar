@@ -1,7 +1,10 @@
+import { useRoutes } from 'react-router-dom'
 import styled from 'styled-components'
+import { routes } from './routes'
 
 const App = () => {
-  return <Container>app</Container>
+  const elements = useRoutes(routes)
+  return <Container>{elements}</Container>
 }
 
 export default App
