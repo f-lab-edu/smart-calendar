@@ -14,7 +14,7 @@
 - React-router-dom
 - React-testing-libaray
 - Typescript
-- Styled-component / Emotion
+- Styled-component
 - Firebase auth
 - Msw
 - Yarn berry
